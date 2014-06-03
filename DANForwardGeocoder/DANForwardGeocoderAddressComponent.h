@@ -10,6 +10,8 @@
 
 @interface DANForwardGeocoderAddressComponent : NSObject<NSCoding>
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder;
+
 @property (nonatomic, copy) NSString *longName;
 @property (nonatomic, copy) NSString *shortName;
 @property (nonatomic, copy) NSArray *types;
