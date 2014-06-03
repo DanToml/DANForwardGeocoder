@@ -8,6 +8,7 @@
 
 #import "DANForwardGeocoder.h"
 
+const NSInteger DANForwardGeocoderRequestTimeoutInterval = 4 * 1000; // Timeout in milliseconds
 #pragma mark - Private Categories
 
 #pragma mark Coordinate Bounds to String
@@ -86,6 +87,13 @@
     }
     
     return geocodedURLString.copy;
+}
+
+- (NSURLRequest *)URLRequestForURLString:(NSString *)URLString
+{
+    return [NSURLRequest requestWithURL:[NSURL URLWithString:URLString]
+                            cachePolicy:NSURLCacheStorageAllowed
+                        timeoutInterval:DANForwardGeocoderRequestTimeoutInterval];
 }
 
 @end
