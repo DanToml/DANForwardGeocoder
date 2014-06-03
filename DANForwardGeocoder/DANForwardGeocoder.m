@@ -67,8 +67,10 @@ const NSInteger DANForwardGeocoderRequestTimeoutInterval = 4 * 1000; // Timeout 
                         success:(DANForwardGeocoderSuccess)success
                         failure:(DANForwardGeocoderFailed)failure
 {
-    
-    
+    [[NSURLSession sharedSession] dataTaskWithRequest:[self URLRequestForURLString:[self URLStringForQuery:query]]
+                                    completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                        
+                                    }];
 }
 
 #pragma mark - Private Methods

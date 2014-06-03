@@ -16,6 +16,7 @@
 		65C94BC3193E2C0A00430EFE /* libDANForwardGeocoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C94BAB193E2C0A00430EFE /* libDANForwardGeocoder.a */; };
 		65C94BC9193E2C0A00430EFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65C94BC7193E2C0A00430EFE /* InfoPlist.strings */; };
 		65C94BCB193E2C0A00430EFE /* DANForwardGeocoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C94BCA193E2C0A00430EFE /* DANForwardGeocoderTests.m */; };
+		65C94BD6193E3B8F00430EFE /* DANForwardGeocoderAddressComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C94BD5193E3B8F00430EFE /* DANForwardGeocoderAddressComponent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		65C94BC6193E2C0A00430EFE /* DANForwardGeocoderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DANForwardGeocoderTests-Info.plist"; sourceTree = "<group>"; };
 		65C94BC8193E2C0A00430EFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65C94BCA193E2C0A00430EFE /* DANForwardGeocoderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DANForwardGeocoderTests.m; sourceTree = "<group>"; };
+		65C94BD4193E3B8F00430EFE /* DANForwardGeocoderAddressComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DANForwardGeocoderAddressComponent.h; sourceTree = "<group>"; };
+		65C94BD5193E3B8F00430EFE /* DANForwardGeocoderAddressComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DANForwardGeocoderAddressComponent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 			children = (
 				65C94BB3193E2C0A00430EFE /* DANForwardGeocoder.h */,
 				65C94BB5193E2C0A00430EFE /* DANForwardGeocoder.m */,
+				65C94BD4193E3B8F00430EFE /* DANForwardGeocoderAddressComponent.h */,
+				65C94BD5193E3B8F00430EFE /* DANForwardGeocoderAddressComponent.m */,
 				65C94BB1193E2C0A00430EFE /* Supporting Files */,
 			);
 			path = DANForwardGeocoder;
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C94BD6193E3B8F00430EFE /* DANForwardGeocoderAddressComponent.m in Sources */,
 				65C94BB6193E2C0A00430EFE /* DANForwardGeocoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
