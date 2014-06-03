@@ -33,6 +33,6 @@
 @property (readonly) MKCoordinateSpan coordinateSpan;
 @property (readonly) MKCoordinateRegion coordinateRegion;
 
-- (NSArray *)findAddressComponentByTypeName:(NSString *)typeName;
+- (NSArray *)findAddressComponentsByTypeName:(NSString *)typeName;
 
 @end

@@ -7,7 +7,26 @@
 //
 
 #import "DANForwardGeocoderKMLResult.h"
+#import "DANForwardGeocoderAddressComponent.h"
 
 @implementation DANForwardGeocoderKMLResult
+
+- (NSArray *)findAddressComponentsByTypeName:(NSString *)typeName
+{
+    NSMutableArray *matchingComponents = [NSMutableArray array];
+    
+    for (DANForwardGeocoderAddressComponent *addressComponent in self.addressComponents) {
+        if (addressComponent.types) {
+            for (NSString *type in addressComponent.types) {
+                if ([type isEqualToString:typeName]) {
+                    [matchingComponents addObject:addressComponent];
+                    break;
+                }
+            }
+        }
+    }
+    
+    return [matchingComponents copy];
+}
 
 @end
