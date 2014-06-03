@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65C94BAF193E2C0A00430EFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C94BAE193E2C0A00430EFE /* Foundation.framework */; };
+		65C94BB4193E2C0A00430EFE /* DANForwardGeocoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65C94BB3193E2C0A00430EFE /* DANForwardGeocoder.h */; };
+		65C94BB6193E2C0A00430EFE /* DANForwardGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C94BB5193E2C0A00430EFE /* DANForwardGeocoder.m */; };
+		65C94BBD193E2C0A00430EFE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C94BBC193E2C0A00430EFE /* XCTest.framework */; };
+		65C94BBE193E2C0A00430EFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C94BAE193E2C0A00430EFE /* Foundation.framework */; };
+		65C94BC0193E2C0A00430EFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C94BBF193E2C0A00430EFE /* UIKit.framework */; };
+		65C94BC3193E2C0A00430EFE /* libDANForwardGeocoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C94BAB193E2C0A00430EFE /* libDANForwardGeocoder.a */; };
+		65C94BC9193E2C0A00430EFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65C94BC7193E2C0A00430EFE /* InfoPlist.strings */; };
+		65C94BCB193E2C0A00430EFE /* DANForwardGeocoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C94BCA193E2C0A00430EFE /* DANForwardGeocoderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65C94BC1193E2C0A00430EFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65C94BA3193E2C0A00430EFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65C94BAA193E2C0A00430EFE;
+			remoteInfo = DANForwardGeocoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65C94BA9193E2C0A00430EFE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				65C94BB4193E2C0A00430EFE /* DANForwardGeocoder.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		65C94BAB193E2C0A00430EFE /* libDANForwardGeocoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDANForwardGeocoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C94BAE193E2C0A00430EFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65C94BB2193E2C0A00430EFE /* DANForwardGeocoder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DANForwardGeocoder-Prefix.pch"; sourceTree = "<group>"; };
+		65C94BB3193E2C0A00430EFE /* DANForwardGeocoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DANForwardGeocoder.h; sourceTree = "<group>"; };
+		65C94BB5193E2C0A00430EFE /* DANForwardGeocoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DANForwardGeocoder.m; sourceTree = "<group>"; };
+		65C94BBB193E2C0A00430EFE /* DANForwardGeocoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DANForwardGeocoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C94BBC193E2C0A00430EFE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		65C94BBF193E2C0A00430EFE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		65C94BC6193E2C0A00430EFE /* DANForwardGeocoderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DANForwardGeocoderTests-Info.plist"; sourceTree = "<group>"; };
+		65C94BC8193E2C0A00430EFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65C94BCA193E2C0A00430EFE /* DANForwardGeocoderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DANForwardGeocoderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65C94BA8193E2C0A00430EFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C94BAF193E2C0A00430EFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65C94BB8193E2C0A00430EFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C94BBD193E2C0A00430EFE /* XCTest.framework in Frameworks */,
+				65C94BC3193E2C0A00430EFE /* libDANForwardGeocoder.a in Frameworks */,
+				65C94BC0193E2C0A00430EFE /* UIKit.framework in Frameworks */,
+				65C94BBE193E2C0A00430EFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65C94BA2193E2C0A00430EFE = {
+			isa = PBXGroup;
+			children = (
+				65C94BB0193E2C0A00430EFE /* DANForwardGeocoder */,
+				65C94BC4193E2C0A00430EFE /* DANForwardGeocoderTests */,
+				65C94BAD193E2C0A00430EFE /* Frameworks */,
+				65C94BAC193E2C0A00430EFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65C94BAC193E2C0A00430EFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65C94BAB193E2C0A00430EFE /* libDANForwardGeocoder.a */,
+				65C94BBB193E2C0A00430EFE /* DANForwardGeocoderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65C94BAD193E2C0A00430EFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65C94BAE193E2C0A00430EFE /* Foundation.framework */,
+				65C94BBC193E2C0A00430EFE /* XCTest.framework */,
+				65C94BBF193E2C0A00430EFE /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65C94BB0193E2C0A00430EFE /* DANForwardGeocoder */ = {
+			isa = PBXGroup;
+			children = (
+				65C94BB3193E2C0A00430EFE /* DANForwardGeocoder.h */,
+				65C94BB5193E2C0A00430EFE /* DANForwardGeocoder.m */,
+				65C94BB1193E2C0A00430EFE /* Supporting Files */,
+			);
+			path = DANForwardGeocoder;
+			sourceTree = "<group>";
+		};
+		65C94BB1193E2C0A00430EFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65C94BB2193E2C0A00430EFE /* DANForwardGeocoder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65C94BC4193E2C0A00430EFE /* DANForwardGeocoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				65C94BCA193E2C0A00430EFE /* DANForwardGeocoderTests.m */,
+				65C94BC5193E2C0A00430EFE /* Supporting Files */,
+			);
+			path = DANForwardGeocoderTests;
+			sourceTree = "<group>";
+		};
+		65C94BC5193E2C0A00430EFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65C94BC6193E2C0A00430EFE /* DANForwardGeocoderTests-Info.plist */,
+				65C94BC7193E2C0A00430EFE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65C94BAA193E2C0A00430EFE /* DANForwardGeocoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65C94BCE193E2C0A00430EFE /* Build configuration list for PBXNativeTarget "DANForwardGeocoder" */;
+			buildPhases = (
+				65C94BA7193E2C0A00430EFE /* Sources */,
+				65C94BA8193E2C0A00430EFE /* Frameworks */,
+				65C94BA9193E2C0A00430EFE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DANForwardGeocoder;
+			productName = DANForwardGeocoder;
+			productReference = 65C94BAB193E2C0A00430EFE /* libDANForwardGeocoder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		65C94BBA193E2C0A00430EFE /* DANForwardGeocoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65C94BD1193E2C0A00430EFE /* Build configuration list for PBXNativeTarget "DANForwardGeocoderTests" */;
+			buildPhases = (
+				65C94BB7193E2C0A00430EFE /* Sources */,
+				65C94BB8193E2C0A00430EFE /* Frameworks */,
+				65C94BB9193E2C0A00430EFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65C94BC2193E2C0A00430EFE /* PBXTargetDependency */,
+			);
+			name = DANForwardGeocoderTests;
+			productName = DANForwardGeocoderTests;
+			productReference = 65C94BBB193E2C0A00430EFE /* DANForwardGeocoderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65C94BA3193E2C0A00430EFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Daniel Tomlinson";
+			};
+			buildConfigurationList = 65C94BA6193E2C0A00430EFE /* Build configuration list for PBXProject "DANForwardGeocoder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65C94BA2193E2C0A00430EFE;
+			productRefGroup = 65C94BAC193E2C0A00430EFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65C94BAA193E2C0A00430EFE /* DANForwardGeocoder */,
+				65C94BBA193E2C0A00430EFE /* DANForwardGeocoderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65C94BB9193E2C0A00430EFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C94BC9193E2C0A00430EFE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65C94BA7193E2C0A00430EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C94BB6193E2C0A00430EFE /* DANForwardGeocoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65C94BB7193E2C0A00430EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C94BCB193E2C0A00430EFE /* DANForwardGeocoderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65C94BC2193E2C0A00430EFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65C94BAA193E2C0A00430EFE /* DANForwardGeocoder */;
+			targetProxy = 65C94BC1193E2C0A00430EFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65C94BC7193E2C0A00430EFE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65C94BC8193E2C0A00430EFE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65C94BCC193E2C0A00430EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		65C94BCD193E2C0A00430EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65C94BCF193E2C0A00430EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DANForwardGeocoder.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DANForwardGeocoder/DANForwardGeocoder-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		65C94BD0193E2C0A00430EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DANForwardGeocoder.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DANForwardGeocoder/DANForwardGeocoder-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		65C94BD2193E2C0A00430EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DANForwardGeocoder/DANForwardGeocoder-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DANForwardGeocoderTests/DANForwardGeocoderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		65C94BD3193E2C0A00430EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DANForwardGeocoder/DANForwardGeocoder-Prefix.pch";
+				INFOPLIST_FILE = "DANForwardGeocoderTests/DANForwardGeocoderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65C94BA6193E2C0A00430EFE /* Build configuration list for PBXProject "DANForwardGeocoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65C94BCC193E2C0A00430EFE /* Debug */,
+				65C94BCD193E2C0A00430EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65C94BCE193E2C0A00430EFE /* Build configuration list for PBXNativeTarget "DANForwardGeocoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65C94BCF193E2C0A00430EFE /* Debug */,
+				65C94BD0193E2C0A00430EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65C94BD1193E2C0A00430EFE /* Build configuration list for PBXNativeTarget "DANForwardGeocoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65C94BD2193E2C0A00430EFE /* Debug */,
+				65C94BD3193E2C0A00430EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65C94BA3193E2C0A00430EFE /* Project object */;
+}
