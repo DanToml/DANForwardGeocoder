@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DANForwardGeocoderAddressComponent : NSObject
+@interface DANForwardGeocoderAddressComponent : NSObject<NSCoding>
+
+@property (nonatomic, copy) NSString *longName;
+@property (nonatomic, copy) NSString *shortName;
+@property (nonatomic, copy) NSArray *types;
 
 @end
