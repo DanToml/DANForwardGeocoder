@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DANForwardGeocoder.h"
 
-@interface DANForwardGeocoderGoogleKMLParser : NSObject
+@interface DANForwardGeocoderGoogleKMLParser : NSObject <NSXMLParserDelegate>
 
+@property (nonatomic, assign) NSInteger statusCode;
+@property (readonly) NSArray *results;
+
+- (BOOL)parseXMLData:(NSData *)data error:(NSError **)error ignoreAddressComponents:(BOOL)ignore;
 @end

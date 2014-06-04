@@ -7,6 +7,7 @@
 //
 
 #import "DANForwardGeocoder.h"
+#import "DANForwardGeocoderGoogleKMLParser.h"
 
 const NSInteger DANForwardGeocoderRequestTimeoutInterval = 4 * 1000; // Timeout in milliseconds
 #pragma mark - Private Categories
@@ -70,6 +71,22 @@ const NSInteger DANForwardGeocoderRequestTimeoutInterval = 4 * 1000; // Timeout 
     [[NSURLSession sharedSession] dataTaskWithRequest:[self URLRequestForURLString:[self URLStringForQuery:query]]
                                     completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                         
+                                        if (data) {
+                                            
+                                            DANForwardGeocoderGoogleKMLParser *parser = [[DANForwardGeocoderGoogleKMLParser alloc] init];
+                                            [parser parseXMLData:data error:&error ignoreAddressComponents:NO];
+                                            
+                                            if (parser.statusCode == DANFGResponseStatusSuccess) {
+                                                
+                                                success(parser.results);
+                                            } else if (failure) {
+                                                
+                                                failure(parser.statusCode, [error localizedDescription]);
+                                            }
+                                        } else if (failure) {
+                                            
+                                            failure(DANFGResponseStatusNetworkError, [error localizedDescription]);
+                                        }
                                     }];
 }
 
