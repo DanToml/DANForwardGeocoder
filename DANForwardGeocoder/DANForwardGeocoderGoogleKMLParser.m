@@ -9,6 +9,7 @@
 #import "DANForwardGeocoderGoogleKMLParser.h"
 #import "DANForwardGeocoderKMLResult.h"
 #import "DANForwardGeocoderAddressComponent.h"
+#import "DANForwardGeocoder.h"
 
 @interface DANForwardGeocoderGoogleKMLParser ()
 @property (nonatomic, assign, getter = isUsingAddressComponents) BOOL usingAddressComponents;

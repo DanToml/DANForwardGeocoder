@@ -10,10 +10,8 @@
 #import "DANForwardGeocoderGoogleKMLParser.h"
 
 const NSInteger DANForwardGeocoderRequestTimeoutInterval = 4 * 1000; // Timeout in milliseconds
-#pragma mark - Private Categories
 
-#pragma mark Coordinate Bounds to String
-
+#pragma mark - Private Category Interfaces
 @interface DANForwardGeocoderCoordinateBounds (NSStringRepresentation)
 /**
  *  NSString representing the bounding box with the format "(southWest latitude),(southWest longitude)|(northEast latitude),(northEast longitude)"
@@ -22,27 +20,31 @@ const NSInteger DANForwardGeocoderRequestTimeoutInterval = 4 * 1000; // Timeout 
 
 @end
 
-@implementation DANForwardGeocoderCoordinateBounds (NSStringRepresentation)
-
-- (NSString *)boundsString
-{
-    return [NSString stringWithFormat:@"%f,%f|%f,%f", self.southWest.latitude, self.southWest.longitude, self.northEast.latitude, self.northEast.longitude];
-}
-
-@end
-
-#pragma mark String encoding
 
 @interface NSString (DANFG_ENCODING)
 @property (nonatomic, readonly) NSString *danfg_urlEncodedString;
 @end
 
-@implementation NSString (DANFG_ENCODING)
+#pragma mark - DANForwardGeocoderCoordinateBounds
 
-- (NSString *)danfg_urlEncodedString
+@implementation DANForwardGeocoderCoordinateBounds
+
+- (instancetype)initWithSouthWest:(CLLocationCoordinate2D)southwest northEast:(CLLocationCoordinate2D)northEast
 {
-    return [self stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    self = [super init];
+    if (self) {
+        _southWest = southwest;
+        _northEast = northEast;
+    }
+    
+    return self;
 }
+
+@end
+
+#pragma mark - DANForwardGeocoderQuery
+
+@implementation DANForwardGeocoderQuery
 
 @end
 
@@ -68,26 +70,26 @@ const NSInteger DANForwardGeocoderRequestTimeoutInterval = 4 * 1000; // Timeout 
                         success:(DANForwardGeocoderSuccess)success
                         failure:(DANForwardGeocoderFailed)failure
 {
-    [[NSURLSession sharedSession] dataTaskWithRequest:[self URLRequestForURLString:[self URLStringForQuery:query]]
-                                    completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                                        
-                                        if (data) {
-                                            
-                                            DANForwardGeocoderGoogleKMLParser *parser = [[DANForwardGeocoderGoogleKMLParser alloc] init];
-                                            [parser parseXMLData:data error:&error ignoreAddressComponents:NO];
-                                            
-                                            if (parser.statusCode == DANFGResponseStatusSuccess) {
-                                                
-                                                success(parser.results);
-                                            } else if (failure) {
-                                                
-                                                failure(parser.statusCode, [error localizedDescription]);
-                                            }
-                                        } else if (failure) {
-                                            
-                                            failure(DANFGResponseStatusNetworkError, [error localizedDescription]);
-                                        }
-                                    }];
+    [[[NSURLSession sharedSession] dataTaskWithRequest:[self URLRequestForURLString:[self URLStringForQuery:query]]
+                                     completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                         
+                                         if (data) {
+                                             
+                                             DANForwardGeocoderGoogleKMLParser *parser = [[DANForwardGeocoderGoogleKMLParser alloc] init];
+                                             [parser parseXMLData:data error:&error ignoreAddressComponents:NO];
+                                             
+                                             if (parser.statusCode == DANFGResponseStatusSuccess) {
+                                                 
+                                                 success(parser.results);
+                                             } else if (failure) {
+                                                 
+                                                 failure(parser.statusCode, [error localizedDescription]);
+                                             }
+                                         } else if (failure) {
+                                             
+                                             failure(DANFGResponseStatusNetworkError, [error localizedDescription]);
+                                         }
+                                     }] resume];
 }
 
 #pragma mark - Private Methods
@@ -113,6 +115,30 @@ const NSInteger DANForwardGeocoderRequestTimeoutInterval = 4 * 1000; // Timeout 
     return [NSURLRequest requestWithURL:[NSURL URLWithString:URLString]
                             cachePolicy:NSURLCacheStorageAllowed
                         timeoutInterval:DANForwardGeocoderRequestTimeoutInterval];
+}
+
+@end
+
+#pragma mark - Private Category Implementation
+
+#pragma mark Coordinate Bounds to String
+
+@implementation DANForwardGeocoderCoordinateBounds (NSStringRepresentation)
+
+- (NSString *)boundsString
+{
+    return [NSString stringWithFormat:@"%f,%f|%f,%f", self.southWest.latitude, self.southWest.longitude, self.northEast.latitude, self.northEast.longitude];
+}
+
+@end
+
+#pragma mark String encoding
+
+@implementation NSString (DANFG_ENCODING)
+
+- (NSString *)danfg_urlEncodedString
+{
+    return [self stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 }
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DANForwardGeocoder.h"
 
 @interface DANForwardGeocoderGoogleKMLParser : NSObject <NSXMLParserDelegate>
 
