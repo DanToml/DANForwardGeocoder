@@ -1,0 +1,28 @@
+{
+  "name": "DANForwardGeocoder",
+  "version": "0.0.1",
+  "summary": "A simple library for forward geocoding.",
+  "homepage": "https://github.com/endocrimes/DANForwardGeocoder",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Danielle Lancashire": "Dan@Tomlinson.io"
+  },
+  "social_media_url": "http://twitter.com/endocrimes",
+  "platforms": {
+    "ios": "6.0",
+    "osx": "10.8"
+  },
+  "source": {
+    "git": "https://github.com/endocrimes/DANForwardGeocoder.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "DANForwardGeocoder",
+    "DANForwardGeocoder/**/*.{h,m}"
+  ],
+  "frameworks": "MapKit",
+  "requires_arc": true
+}
