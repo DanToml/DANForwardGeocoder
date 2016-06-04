@@ -2,7 +2,7 @@
 //  DANForwardGeocoder.m
 //  DANForwardGeocoder
 //
-//  Created by  Danielle Lancashireon 03/06/2014.
+//  Created by Danielle Lancashire on 03/06/2014.
 //  Copyright (c) 2014 Danielle Lancashire. All rights reserved.
 //
 
