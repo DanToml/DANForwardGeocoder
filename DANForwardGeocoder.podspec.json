@@ -1,6 +1,6 @@
 {
   "name": "DANForwardGeocoder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "A simple library for forward geocoding.",
   "homepage": "https://github.com/DanielTomlinson/DANForwardGeocoder",
   "license": {
@@ -17,12 +17,13 @@
   },
   "source": {
     "git": "https://github.com/DanielTomlinson/DANForwardGeocoder.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "source_files": [
     "DANForwardGeocoder",
     "DANForwardGeocoder/**/*.{h,m}"
   ],
   "frameworks": "MapKit",
-  "requires_arc": true
+  "requires_arc": true,
+  "deprecated": true
 }
